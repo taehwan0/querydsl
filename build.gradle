@@ -29,8 +29,9 @@ dependencies {
     // querydsl 추가 boot 3.0 아래에서는 아래 두가지 필요한 것으로 보임
     implementation 'com.querydsl:querydsl-jpa:5.0.0:jakarta'
 //    annotationProcessor "com.querydsl:querydsl-apt:${dependencyManagement.importedProperties['querydsl.version']}:jakarta"
+
     compileOnly 'org.projectlombok:lombok'
-    runtimeOnly 'com.h2database:h2'
+    runtimeOnly 'com.mysql:mysql-connector-j'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 
